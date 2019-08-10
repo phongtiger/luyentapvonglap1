@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n1 = 0;
+    let n2 = 1;
+    let mang = [1];
+    document.write(n2+"<br>");
+    let n3 ;
+    for (let i =0; i<20; i++){
+        n3 =n1+n2;
+        document.write(n3+ "<br>");
+        mang.push(n3);
+        n1 = n2;
+        n2 = n3;
+    }
+    let tong=0;
+    for (let j =0; j<20; j++) {
+        tong += mang[j];
+    }
+    document.write("Tong 20 so dau la:  "+tong);
+
+</script>
+</body>
+</html>

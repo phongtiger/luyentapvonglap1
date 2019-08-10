@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="choi()" style="position: absolute; left:600px; top:200px ; height: 70px; width: 100px" >Play</button>
+<script>
+    let gioihan= parseInt(prompt("Nhap vao gioi han"));
+    function choi() {
+        let sonhap= parseInt(prompt("Nhap vao so"));
+        let a = Math.floor(Math.random()*gioihan);
+        if(a == sonhap){
+            alert("You win");
+        }else if (a<sonhap){
+            alert("bé hơn");
+        }else if (a>sonhap){
+            alert("lớn hơn");
+        }
+    }
+</script>
+</body>
+</html>
